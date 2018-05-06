@@ -1,0 +1,5 @@
+{
+  "role-name" : "mlExide-internal",
+  "description" : "Internal role used for amping",
+  "role" : [ "mlExide-writer" ]
+}
