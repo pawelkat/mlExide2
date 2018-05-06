@@ -104,7 +104,8 @@ eXide.edit.Outline = (function () {
 		
         filter: function(str) {
             var regex = new RegExp(str, "i");
-            $("#outline li a").each(function() {
+            console.log("write cts:uri-match('*resource*') here");
+            $("#outline li").each(function() {
                 var item = $(this);
                 if (!regex.test(item.text())) {
                     item.hide();

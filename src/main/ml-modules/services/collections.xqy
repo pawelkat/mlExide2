@@ -13,7 +13,7 @@ declare %private function collections:getResources($root){
   let $dbName := tokenize($root, "/")[3]
   let $resources :=
     xdmp:invoke-function(
-            function(){cts:uris()},
+            function(){cts:uris()[position() < 1000]},
             <options xmlns="xdmp:eval">
               <database>{xdmp:database($dbName)}</database>
             </options>
